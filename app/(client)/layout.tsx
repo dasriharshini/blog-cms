@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import { Provider } from "../utils/Provider";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,10 +33,10 @@ export default function RootLayout({
       <body
         className={`${firaCode.className} h-full bg-slate-950 text-purple-500 selection:bg-purple-50`}
       >
-        <Provider>
+
         <Navbar/>
         <main className="mx-auto max-w-5xl px-6"> {children}</main>
-        </Provider>
+
        
       </body>
     </html>
