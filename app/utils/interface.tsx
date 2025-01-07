@@ -3,7 +3,7 @@ export interface Post{
     slug:{current:string}
     publishedat: string
     excerpt:string
-    body: any
+    body: unknown
     tags:Array<Tag>
     _id:string
 
